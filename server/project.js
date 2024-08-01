@@ -59,7 +59,7 @@ router.put('/projects/:id', authMiddleware, async (req, res) => {
   }
 });
 
-// Route to delete a project
+//  This route is used to delete a project
 router.delete('/projects/:id', authMiddleware, async (req, res) => {
   const { id } = req.params;
   const userId = req.user.id;

@@ -53,7 +53,7 @@ const Signup = () => {
         const response = await axios.post('/api/auth/signup', formData);
         setMessage(response.data.message);
         if (response.status === 201) {
-          navigate('/project');
+          navigate('/Project');
         }
       } catch (error) {
         setMessage(error.response ? error.response.data.message : 'An error occurred');

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 
 const Project = () => {
     const [projects, setProjects] = useState([]);
@@ -10,7 +9,7 @@ const Project = () => {
         thumbnail: '',
     });
     const [message, setMessage] = useState('');
-    const navigate = useNavigate();
+   
 
     useEffect(() => {
         const fetchProjects = async () => {
